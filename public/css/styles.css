@@ -1,10 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 body {
@@ -17,6 +16,12 @@ ul, li {
 
 header {
     margin-bottom: 2rem;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 1rem;
+}
+
+header h1 {
+    margin-bottom: 1rem;
 }
 
 header ul {
@@ -24,15 +29,53 @@ header ul {
     gap: 3rem;
 }
 
+main > h2 {
+    margin-bottom: 1rem;
+}
+
 .book {
     border: 1px solid #ccc;
     width: 30rem;
     padding: 1rem;
     border-radius: 1rem;
-
 }
 
 .book + .book {
     margin-top: 1rem;
+}
 
+.buttons {
+    margin-top: .5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.buttons a {
+    display: block;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.buttons .mais {
+    border: 1px solid #007BFF;
+    background: #007BFF;
+    color: #FFF;
+}
+
+.buttons .mais:hover {
+    background: #FFF;
+    color: #007BFF;
+}
+
+.buttons .editar {
+    border: 1px solid #FFC107;
+    background: #FFC107;
+    color: #000;   
+}
+
+.buttons .editar:hover {
+    background: #FFF;
+    color: #FFC107;
 }
