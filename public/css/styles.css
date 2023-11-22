@@ -10,7 +10,8 @@ body {
     padding: 2rem;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
 }
 
@@ -29,7 +30,7 @@ header ul {
     gap: 3rem;
 }
 
-main > h2 {
+main>h2 {
     margin-bottom: 1rem;
 }
 
@@ -40,7 +41,7 @@ main > h2 {
     border-radius: 1rem;
 }
 
-.book + .book {
+.book+.book {
     margin-top: 1rem;
 }
 
@@ -51,7 +52,8 @@ main > h2 {
 }
 
 
-.buttons a {
+.buttons a,
+.buttons button {
     display: block;
     text-decoration: none;
     padding: .5rem;
@@ -72,10 +74,23 @@ main > h2 {
 .buttons .editar {
     border: 1px solid #FFC107;
     background: #FFC107;
-    color: #000;   
+    color: #000;
 }
 
 .buttons .editar:hover {
     background: #FFF;
     color: #FFC107;
+}
+
+
+.buttons .excluir {
+    border: 1px solid #dc3545;
+    background: #dc3545;
+    color: #ffffff;
+}
+
+.buttons .excluir:hover {
+    background: #FFF;
+    color: #dc3545;
+    cursor: pointer;
 }
